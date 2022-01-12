@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "First_poetry_project"
+name = "poetry_project"
 version = "0.1.0"
 description = ""
 authors = ["alexeyf <Ffl.B-Unit@mail.ru>"]
@@ -9,7 +9,7 @@ python = "^3.9"
 colorama = "^0.4.4"
 
 [tool.poetry.scripts]
-say-hello="first_poetry_project.scripts.say_hello:main"
+say-hello="poetry_project.scripts.say_hello:main"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
