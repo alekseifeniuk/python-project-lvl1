@@ -1,0 +1,17 @@
+name: project-build
+
+on:
+  - push
+  - pull_request
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: install dependencies
+        run: |
+          pip install poetry
+          make install
+      - name: run linter
+        run: |
+          make lint
