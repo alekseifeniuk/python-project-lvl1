@@ -1,0 +1,20 @@
+name: lint
+
+on:
+  - push
+  - pull_request
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: Install Poetry
+        run: pip install poetry
+      - name: Install ependencies
+        run: |
+          make install
+      - name: Run linter
+        run: |
+          make lint
