@@ -1,25 +1,23 @@
 #!usr/bin/env python3
 
-import prompt
+from brain_games.cli import welcome_user, print_rules
+from brain_games.cli import question, answer, correct_answer
+from brain_games.cli import game_over, congratulate_user
+from brain_games.games import brain_even_rules
 
 
 def game_core(game):
-    print("Welcome to the Brain Games!")
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
-    print(game.game_rules)
+    user_name = welcome_user()
+    print_rules(brain_even_rules)
     for i in range(3):
         game_task, right_answer = game.rules()
-        print(f'Question: {game_task}')
-        user_answer = prompt.string('Your answer: ')
+        question(game_task)
+        user_answer = answer()
 
         if user_answer == right_answer:
-            print('Correct!')
+            correct_answer()
         else:
-            a = f'"{user_answer}" is wrong answer ;(. '
-            b = f'Correct answer was "{right_answer}".'
-            print(a + b)
-            print(f"Let's try again, {name}!")
+            game_over(user_answer, right_answer, user_name)
             break
     else:
-        print(f'Congratulations, {name}!')
+        congratulate_user(user_name)
