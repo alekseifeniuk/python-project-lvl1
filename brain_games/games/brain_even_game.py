@@ -5,7 +5,7 @@ from random import randint
 game_rules = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def rules():
+def get_game_round():
     game_task = randint(1, 500)
     if game_task % 2 == 0:
         right_answer = 'yes'

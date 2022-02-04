@@ -1,18 +1,23 @@
 #!usr/bin/env python3
 
-from brain_games.cli import welcome_user, print_rules
-from brain_games.cli import question, answer, correct_answer
-from brain_games.cli import game_over, congratulate_user
-from brain_games.games import brain_even_rules
+from brain_games.games import brain_even_game
+from brain_games.cli import (
+    welcome_and_acknowledge_user,
+    print_rules,
+    ask_question,
+    ask_answer,
+    correct_answer,
+    congratulate_user,
+    game_over)
 
 
 def game_core(game):
-    user_name = welcome_user()
-    print_rules(brain_even_rules)
+    user_name = welcome_and_acknowledge_user()
+    print_rules(brain_even_game.game_rules)
     for i in range(3):
-        game_task, right_answer = game.rules()
-        question(game_task)
-        user_answer = answer()
+        game_task, right_answer = game.get_game_round()
+        ask_question(game_task)
+        user_answer = ask_answer()
 
         if user_answer == right_answer:
             correct_answer()

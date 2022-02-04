@@ -3,22 +3,22 @@
 import prompt
 
 
-def welcome_user():
+def welcome_and_acknowledge_user():
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
     return name
 
 
-def print_rules(game):
-    print(game.game_rules)
+def print_rules(rules):
+    print(rules)
 
 
-def question(game_task):
+def ask_question(game_task):
     print(f'Question: {game_task}')
 
 
-def answer():
+def ask_answer():
     u_answer = prompt.string('Your answer: ')
     return u_answer
 
