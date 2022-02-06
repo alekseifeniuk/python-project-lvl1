@@ -7,7 +7,8 @@ from brain_games.cli import (
     ask_answer,
     correct_answer,
     congratulate_user,
-    game_over)
+    game_over,
+)
 
 
 def game_core(game):

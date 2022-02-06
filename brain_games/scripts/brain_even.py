@@ -8,5 +8,5 @@ def main():
     game_core(brain_even_game)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
