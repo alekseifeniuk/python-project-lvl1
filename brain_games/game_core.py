@@ -1,6 +1,5 @@
 #!usr/bin/env python3
 
-from brain_games.games import brain_even_game
 from brain_games.cli import (
     welcome_and_acknowledge_user,
     print_rules,
@@ -13,8 +12,8 @@ from brain_games.cli import (
 
 def game_core(game):
     user_name = welcome_and_acknowledge_user()
-    print_rules(brain_even_game.game_rules)
-    for i in range(3):
+    print_rules(game.game_rules)
+    for _ in range(3):
         game_task, right_answer = game.get_game_round()
         ask_question(game_task)
         user_answer = ask_answer()
