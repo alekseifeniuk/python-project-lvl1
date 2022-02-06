@@ -16,3 +16,7 @@ repos:
     rev: 4.0.1
     hooks:
       - id: flake8
+  - repo: https://github.com/psf/black
+    rev: 21.10b0
+    hooks:
+      - id: black
