@@ -7,10 +7,14 @@
 
 ### Games in the project
 
+### Installation
+
+[![asciicast](https://asciinema.org/a/Sri7CabsrNskcqBHin8LEwM7k.svg)](https://asciinema.org/a/Sri7CabsrNskcqBHin8LEwM7k)
+
 ### Brain Even
 
-[![asciicast](https://asciinema.org/a/RjCfq3HtaGA7mBVgeWHPgTpUY.svg)](https://asciinema.org/a/RjCfq3HtaGA7mBVgeWHPgTpUY)
+[![asciicast](https://asciinema.org/a/at1hQBf2BInKTPWDA3wlU4r0n.svg)](https://asciinema.org/a/at1hQBf2BInKTPWDA3wlU4r0n)
 
 ### Brain Calc
 
-[![asciicast](https://asciinema.org/a/GfP5UfRNcHS0UPEeQzhOR6qhl.svg)](https://asciinema.org/a/GfP5UfRNcHS0UPEeQzhOR6qhl)
+[![asciicast](https://asciinema.org/a/at1hQBf2BInKTPWDA3wlU4r0n.svg)](https://asciinema.org/a/at1hQBf2BInKTPWDA3wlU4r0n)
