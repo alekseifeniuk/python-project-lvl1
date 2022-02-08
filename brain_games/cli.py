@@ -10,7 +10,7 @@ def welcome_and_acknowledge_user() -> str:
     return name
 
 
-def print_rules(rules):
+def print_rules(rules: str):
     print(rules)
 
 
