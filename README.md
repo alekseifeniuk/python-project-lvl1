@@ -17,4 +17,4 @@
 
 ### Brain Calc
 
-[![asciicast](https://asciinema.org/a/at1hQBf2BInKTPWDA3wlU4r0n.svg)](https://asciinema.org/a/at1hQBf2BInKTPWDA3wlU4r0n)
+[![asciicast](https://asciinema.org/a/wRKlszXOY6CrBSXXmQ7BJP7nL.svg)](https://asciinema.org/a/wRKlszXOY6CrBSXXmQ7BJP7nL)

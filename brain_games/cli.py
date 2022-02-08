@@ -14,7 +14,7 @@ def print_rules(rules):
     print(rules)
 
 
-def ask_question(game_task):
+def ask_question(game_task: str):
     print(f"Question: {game_task}")
 
 
@@ -27,11 +27,11 @@ def correct_answer():
     print("Correct!")
 
 
-def congratulate_user(user_name):
+def congratulate_user(user_name: str):
     print(f"Congratulations, {user_name}!")
 
 
-def game_over(user_answer, right_answer, user_name):
+def game_over(user_answer: str, right_answer: str, user_name: str):
     print(
         f'"{user_answer}" is wrong answer ;(. '
         f'Correct answer was "{right_answer}".\n'
