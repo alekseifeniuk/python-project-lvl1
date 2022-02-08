@@ -17,6 +17,9 @@ jobs:
       - name: Install Poetry
         run: |
           pip install poetry
+      - name: Poetry config
+        run: |
+          poetry config virtualenvs.create false
       - name: Install dependencies
         run: |
           make install
@@ -25,5 +28,4 @@ jobs:
           make lint
       - name: Run pre-commit
         run: |
-          pip install pre-commit
           pre-commit run --all-files

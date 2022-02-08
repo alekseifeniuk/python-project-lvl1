@@ -7,5 +7,5 @@ def main():
     welcome_and_acknowledge_user()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
