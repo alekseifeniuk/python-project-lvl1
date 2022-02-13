@@ -2,21 +2,19 @@ from random import randint
 from typing import Tuple
 
 game_rules = "What number is missing in progression?"
-
-# Number of progression elements
-quantity = 10
+MIN_SIZE = 5
+MAX_SIZE = 10
+MAX_STEP = 10
+MAX_START = 10
 
 
 def get_game_round() -> Tuple[str, str]:
-    inc = randint(3, 15)
-    hide_number = randint(1, quantity)
-    right_answer = str(hide_number * inc)
-    game_task = ""
-    # Shifting the index by one
-    for _ in range(1, quantity + 1):
-        if _ != hide_number:
-            d = str(inc * _)
-            game_task += f" {d} "
-        else:
-            game_task += " .. "
+    begin = randint(0, MAX_START)
+    end = randint(MIN_SIZE, MAX_SIZE)
+    inc = randint(2, MAX_STEP)
+    sequence = list(range(begin, begin + end * inc, inc))
+    index = randint(0, len(sequence) - 1)
+    right_answer = str(sequence[index])
+    sequence[index] = ".."
+    game_task = " ".join(str(i) for i in sequence)
     return game_task, right_answer
