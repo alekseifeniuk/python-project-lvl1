@@ -25,4 +25,4 @@
 
 ### Brain Progression
 
-[![asciicast](https://asciinema.org/a/HYbtNIZwhAzgsxON0kmUVKouB.svg)](https://asciinema.org/a/HYbtNIZwhAzgsxON0kmUVKouB)
+[![asciicast](https://asciinema.org/a/eOdXC8DBwzHY7ii52MdL8DzpY.svg)](https://asciinema.org/a/eOdXC8DBwzHY7ii52MdL8DzpY)
